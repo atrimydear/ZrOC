@@ -1,0 +1,48 @@
+\documentclass{ctexart}
+\usepackage{graphicx}
+    \graphicspath{{picture/}}
+\usepackage{gbt7714}
+\usepackage{subcaption}
+% 加入 amsmath 和 booktabs，确保 cleveref 在 amsmath 之后加载
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{cleveref}
+    \crefname{table}{表}{表}
+    \crefname{figure}{图}{图}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\bibliographystyle{gbt7714-numerical}
+
+\begin{document}
+    \section{实验目标}\cite{WGCL202201014}
+        通过二分法不断迭代寻找合适的参数
+        \subsection{目标参数}
+            电压、喷射距离、滚筒转速、挤出速率、滑台移速、nZr：PVP配比
+
+            需要注意的是，电压和喷射距离本质上是服务于同一个参数: 胶液飞行速度。这两个参数应当整体调节。
+            
+            \paragraph{预想机理}通过控制胶液飞行速率避免胶液在飞行途中聚团，从而减少附着纤维中的聚团现象；挤出速率：避免在飞行速
+            率过慢时挤出较多导致胶液束过粗；滑台移动速率：减少滑台变速抖动，抑制胶液偏聚；配比：控制纤维的分布；
+            滚筒转速：尽快分离前后附着胶液的空间分布。
+    \section{设备改良}
+        铝箔纸换硅油纸、提高箱体气密性
+    \section{实验计划}
+        \begin{tabular}{|ccc|}
+            \hline
+            次序&参数&最初预设调参节点\\\hline
+            1&nZr: PVP&1.5、2.5\\\hline
+            2&滚筒转速&200+n40rpm\\\hline
+            3&滑台移速&10mm/h\\\hline
+        \end{tabular}
+        
+        电压与喷射距离（喷射速率）的调节需要进行数学计算
+    \input{maintext/0321改良效果.tex}
+    \input{maintext/0401效果.tex}
+    \input{maintext/0522xrd.tex}
+    \input{maintext/0610实验数据.tex}
+    \section{综述表}
+        \input{maintext/EAB.tex}
+\bibliography{referrence}
+
+\end{document}

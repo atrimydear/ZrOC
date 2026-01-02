@@ -1,0 +1,117 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[张晓山\ 等(2022)张晓山, 王兵, 吴楠, 韩成, 刘海燕, and 王应德]{WGCL202201014}
+张晓山, 王兵, 吴楠, 等.
+\newblock 高红外遮蔽SiZrOC纳米纤维膜的制备及其性能研究\allowbreak[J].
+\newblock 无机材料学报, 2022, 37\allowbreak (01): 94-101.
+
+\bibitem[Hou et~al.(2017)Hou, Cheng, Zhang, Yang, Deng, Yang, Chen, Wang, and Zheng]{hou2017electrospinning}
+HOU Y, CHENG L, ZHANG Y, et~al.
+\newblock Electrospinning of fe/sic hybrid fibers for highly efficient microwave absorption\allowbreak[J].
+\newblock ACS applied materials \& interfaces, 2017, 9\allowbreak (8): 7265-7271.
+
+\bibitem[Zhang et~al.(2023)Zhang, Jia, Zhang, and Wu]{zhang2023electrospun}
+ZHANG S, JIA Z, ZHANG Y, et~al.
+\newblock Electrospun fe0. 64ni0. 36/mxene/cnfs nanofibrous membranes with multicomponent heterostructures as flexible electromagnetic wave absorbers\allowbreak[J].
+\newblock Nano Research, 2023, 16\allowbreak (2): 3395-3407.
+
+\bibitem[Cai et~al.(2024)Cai, Jiang, Zhang, Liu, Zhang, Long, and Bi]{RN57}
+CAI W~J, JIANG J~G, ZHANG Z~D, et~al.
+\newblock Carbon nanofibers embedded with fe–co alloy nanoparticles via electrospinning as lightweight high-performance electromagnetic wave absorbers\allowbreak[J/OL].
+\newblock Rare Metals, 2024, 43\allowbreak (6): 2769-2783.
+\newblock \url{https://doi.org/10.1007/s12598-023-02592-7}.
+
+\bibitem[Yang et~al.(2013)Yang, Guo, Zhang, Huang, Gu, Huang, Kang, Alan~Hatton, and Rutledge]{https://doi.org/10.1002/app.38027}
+YANG Y, GUO Z, ZHANG H, et~al.
+\newblock Electrospun magnetic carbon composite fibers: Synthesis and electromagnetic wave absorption characteristics\allowbreak[J/OL].
+\newblock Journal of Applied Polymer Science, 2013, 127\allowbreak (6): 4288-4295.
+\newblock \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/app.38027}.
+\newblock DOI: \doi{https://doi.org/10.1002/app.38027}.
+
+\bibitem[Wei et~al.(2018)Wei, Zhang, Gong, Liu, Zhang, Shi, and Zhang]{WEI20181488}
+WEI Y, ZHANG L, GONG C, et~al.
+\newblock Fabrication of tin/carbon nanofibers by electrospinning and their electromagnetic wave absorption properties\allowbreak[J/OL].
+\newblock Journal of Alloys and Compounds, 2018, 735: 1488-1493.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S092583881734077X}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.jallcom.2017.11.295}.
+
+\bibitem[Qiao et~al.(2018)Qiao, Xu, Lv, Zhang, Wang, Liu, and Liu]{doi:10.1021/acsanm.8b01303}
+QIAO J, XU D, LV L, et~al.
+\newblock Self-assembled zno/co hybrid nanotubes prepared by electrospinning for lightweight and high-performance electromagnetic wave absorption\allowbreak[J/OL].
+\newblock ACS Applied Nano Materials, 2018, 1\allowbreak (9): 5297-5306.
+\newblock \url{https://doi.org/10.1021/acsanm.8b01303}.
+
+\bibitem[Zuo et~al.(2019)Zuo, Xu, Zhang, Li, Jiang, and Yue]{ZUO20194474}
+ZUO X, XU P, ZHANG C, et~al.
+\newblock Porous magnetic carbon nanofibers (p-cnf/fe) for low-frequency electromagnetic wave absorption synthesized by electrospinning\allowbreak[J/OL].
+\newblock Ceramics International, 2019, 45\allowbreak (4): 4474-4481.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S0272884218332425}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.ceramint.2018.11.127}.
+
+\bibitem[Zhao et~al.(2022)Zhao, Wang, Cai, Sun, Hou, Wu, Bai, and Wang]{RN63}
+ZHAO P~Y, WANG H~Y, CAI B, et~al.
+\newblock Electrospinning fabrication and ultra-wideband electromagnetic wave absorption properties of ceo2/n-doped carbon nanofibers\allowbreak[J/OL].
+\newblock Nano Research, 2022, 15\allowbreak (9): 7788-7796.
+\newblock \url{https://doi.org/10.1007/s12274-022-4675-x}.
+
+\bibitem[Zhang et~al.(2022)Zhang, Liu, Li, Su, and Ji]{ZHANG2022167036}
+ZHANG B, LIU Y, LI X, et~al.
+\newblock Closed-cell zro2/sic-based composite nanofibers with efficient electromagnetic wave absorption and thermal insulation properties\allowbreak[J/OL].
+\newblock Journal of Alloys and Compounds, 2022, 927: 167036.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S0925838822034272}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.jallcom.2022.167036}.
+
+\bibitem[Guo et~al.(2023)Guo, Song, Zhang, Yang, Li, Zhao, Zhang, and Qi]{GUO2023235}
+GUO Y, SONG Q, ZHANG L, et~al.
+\newblock High-aspect-ratio zrc whiskers: Synthesis, growth mechanism and electromagnetic wave absorption properties\allowbreak[J/OL].
+\newblock Journal of Materiomics, 2023, 9\allowbreak (2): 235-243.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S2352847822001460}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.jmat.2022.11.001}.
+
+\bibitem[Wang et~al.(2024)Wang, Qi, Jia, and Li]{WANG2024136442}
+WANG Q, QI L, JIA Y, et~al.
+\newblock Flexible zro2/zrc/zrb2 ceramic nanofiber mats by electrospinning with broadband electromagnetic absorption and high-temperature oxidation resistance\allowbreak[J/OL].
+\newblock Materials Letters, 2024, 365: 136442.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S0167577X24005809}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.matlet.2024.136442}.
+
+\bibitem[Yang et~al.(2025)Yang, Li, Hu, Li, Li, Hu, Li, Huang, and Meng]{YANG2025100988}
+YANG C, LI K, HU M, et~al.
+\newblock Flexible zro2/zrb2/c nanofiber felt with enhanced microwave absorption and ultralow thermal conductivity\allowbreak[J/OL].
+\newblock Journal of Materiomics, 2025, 11\allowbreak (4): 100988.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S2352847824002272}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.jmat.2024.100988}.
+
+\bibitem[Zhu et~al.(2025)Zhu, Weng, Liao, Zheng, and Bi]{ZHU2025164079}
+ZHU H, WENG X, LIAO M, et~al.
+\newblock Zro2-interface-engineered sic nanofiber aerogel with integrated hydrophobicity, thermal insulation, and broadband electromagnetic wave absorption\allowbreak[J/OL].
+\newblock Applied Surface Science, 2025, 711: 164079.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S0169433225017945}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.apsusc.2025.164079}.
+
+\bibitem[Yin et~al.(2025)Yin, Wang, Pang, Liu, Xu, Yu, and Zhou]{YIN2025112628}
+YIN X, WANG Y, PANG N, et~al.
+\newblock Ultralight, highly elastic zro2/carbon fiber reinforced reduced graphene oxide aerogels with radar and infrared stealth capabilities\allowbreak[J/OL].
+\newblock Composites Part B: Engineering, 2025, 303: 112628.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S1359836825005293}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.compositesb.2025.112628}.
+
+\bibitem[Wang et~al.(2024)Wang, Liu, Wang, Bai, Qin, Li, and Wang]{WANG2024104818}
+WANG X, LIU L, WANG X, et~al.
+\newblock Joule heat induced ultrafine zro2/c composites for enhanced microwave absorption\allowbreak[J/OL].
+\newblock Surfaces and Interfaces, 2024, 51: 104818.
+\newblock \url{https://www.sciencedirect.com/science/article/pii/S2468023024009751}.
+\newblock DOI: \doi{https://doi.org/10.1016/j.surfin.2024.104818}.
+
+\end{thebibliography}

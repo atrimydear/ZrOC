@@ -1,0 +1,18 @@
+% 独立导出综述表（Standalone）
+\documentclass{ctexart}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[version=4]{mhchem}
+\usepackage{url}
+\usepackage{gbt7714}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\bibliographystyle{gbt7714-numerical}
+\begin{document}
+\vspace{1em}
+% 直接输入同目录下的表格源文件
+\input{EAB.tex}
+
+% 包含参考文献（使用上级目录的 referrence.bib）
+\bibliography{../referrence}
+\end{document}
