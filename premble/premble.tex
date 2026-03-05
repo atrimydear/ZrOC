@@ -1,0 +1,24 @@
+\usepackage{graphicx}
+    \graphicspath{{picture/}}
+\usepackage{gbt7714}
+\usepackage{subcaption}
+% 设置页边距
+\usepackage[a4paper,left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+% 加入 amsmath 和 booktabs，确保 cleveref 在 amsmath 之后加载
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{tabularx}
+% 添加超链接支持（必须在 cleveref 之前加载）
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            citecolor=blue,
+            urlcolor=blue,
+            bookmarks=true,
+            bookmarksnumbered=true,
+            pdfstartview=FitH]{hyperref}
+\usepackage{cleveref}
+    \crefname{table}{表}{表}
+    \crefname{figure}{图}{图}
+\usepackage{float}
+\usepackage[version=4]{mhchem}
+\bibliographystyle{gbt7714-numerical}
