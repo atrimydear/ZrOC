@@ -1,24 +1,25 @@
+% ==================== 页面设置 ====================
+\usepackage[a4paper, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+
+% ==================== 图表和浮动体 ====================
 \usepackage{graphicx}
-    \graphicspath{{picture/}}
-\usepackage{gbt7714}
+\graphicspath{{picture/}}
 \usepackage{subcaption}
-% 设置页边距
-\usepackage[a4paper,left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
-% 加入 amsmath 和 booktabs，确保 cleveref 在 amsmath 之后加载
-\usepackage{amsmath}
+\usepackage{float}
 \usepackage{booktabs}
 \usepackage{tabularx}
-% 添加超链接支持（必须在 cleveref 之前加载）
-\usepackage[colorlinks=true,
-            linkcolor=blue,
-            citecolor=blue,
-            urlcolor=blue,
-            bookmarks=true,
-            bookmarksnumbered=true,
-            pdfstartview=FitH]{hyperref}
-\usepackage{cleveref}
-    \crefname{table}{表}{表}
-    \crefname{figure}{图}{图}
-\usepackage{float}
+
+% ==================== 数学和科学公式 ====================
+\usepackage{amsmath}
 \usepackage[version=4]{mhchem}
+
+% ==================== 参考文献 ====================
+\usepackage{gbt7714}
 \bibliographystyle{gbt7714-numerical}
+
+% ==================== 超链接和交叉引用 ====================
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue,
+            bookmarks=true, bookmarksnumbered=true, pdfstartview=FitH]{hyperref}
+\usepackage{cleveref}
+\crefname{table}{表}{表}
+\crefname{figure}{图}{图}
