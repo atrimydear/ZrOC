@@ -1,0 +1,40 @@
+% 页面设置
+\usepackage[a4paper, left=2.8cm, right=2.8cm, top=2.8cm, bottom=2.8cm]{geometry}
+
+% 图表与浮动体
+\usepackage{graphicx}
+\graphicspath{{picture/}}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+
+% 数学与化学式
+\usepackage{amsmath}
+\usepackage[version=4]{mhchem}
+
+% 列表与段落
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=2em}
+\setlist[enumerate]{leftmargin=2.3em}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.3em}
+
+% 参考文献
+\usepackage{gbt7714}
+\bibliographystyle{gbt7714-numerical}
+
+% 交叉引用与超链接
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue,
+            bookmarks=true, bookmarksnumbered=true, pdfstartview=FitH]{hyperref}
+\usepackage{pdfpages}
+\usepackage{cleveref}
+\crefname{table}{表}{表}
+\crefname{figure}{图}{图}
+
+% 表格辅助列类型
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
