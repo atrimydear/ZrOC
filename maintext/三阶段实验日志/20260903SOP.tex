@@ -1,0 +1,131 @@
+% ============================================================
+%  三阶段实验 SOP（打印版）— "夹心饼干 → 苦瓜"  定稿 2026-09-03
+%  编译: xelatex 20260903SOP.tex （在本目录内运行）
+%  内容: 定稿配方(精确用量) / 样品组 / 逐日执行表 / 炉子程序 / 记录与红线
+%  依据: 20260825 苦瓜计划 v2.1 + 实验日志 CSV 对账（硅烷 5:1 等）
+% ============================================================
+\documentclass[a4paper, 10pt]{ctexart}
+\usepackage{geometry}
+\geometry{left=1.5cm, right=1.5cm, top=1.8cm, bottom=2.0cm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[version=4]{mhchem}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\setlist[itemize]{itemsep=1pt, parsep=0pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries 三阶段实验 SOP（打印版）}\\[3pt]
+{\normalsize ``夹心饼干 $\rightarrow$ 苦瓜''结构改造 ｜ 定稿 2026-09-03 ｜ 主线硅烷比 5:1（D3 支线 3:1）}
+\end{center}
+
+\section*{0. 定稿要点（先读）}
+\begin{itemize}
+  \item 硅烷原液 \textbf{MTMS:DMDMS = 5:1（质量）}，与 2025-09 以来全部历史实验一致；基液 = 硅烷原液:DMF = 1:1。
+  \item Zr 口径：\textbf{0.64 g 正丙醇锆 / 10 g 基液（含 5 g 硅烷）$\approx$ Zr:Si 5 mol\%}（anand2020 保碳甜点）。0.64 g 即基准；C-Zr$\uparrow$ 用 2.56 g（$\approx$20 mol\%）。
+  \item 外层液 PVP 定 \textbf{1.72 g / 10 g 基液}（=现有外层配方；一层 mat 两外层按基液 20 g + PVP 3.44 g）。
+  \item 葡萄糖以糖水形式现配现用；正丙醇锆忌游离水：加料顺序 PVP $\rightarrow$ 锆 $\rightarrow$ 糖水，\textbf{加完糖水 15--30 min 内开纺}。
+  \item \textbf{本表已整体顺延一日（自 09-03 晚起执行）}：原 09-02 备料并入 09-03 晚；三个决策节点顺延为 \textbf{09-09 / 09-11 / 09-13}。
+\end{itemize}
+
+\section*{1. 称量表（精确用量）}
+\begin{tabular}{p{4.0cm}p{5.0cm}p{6.4cm}}
+\toprule
+液体 & 组分与用量 & 备注 \\
+\midrule
+硅烷原液（主线，1 罐） & MTMS \textbf{62.50 g} + DMDMS \textbf{12.50 g} & 加去离子水 \textbf{1.0--1.5 mL（不加酸）}，密封磁搅\textbf{过夜}预水解 \\
+基液（150 g，够 5 mat） & 硅烷原液 75 g + DMF \textbf{75.0 g} & 搅 30 min $\rightarrow$ 密封防潮存放；DMF 吸湿，用前查无浑浊 \\
+第 2 罐硅烷原液 & 同上 62.50 + 12.50 g（09-07 晚配） & 供 C/E/Zr 系列；预水解过夜 \\
+D3 小批（3:1，1 mat） & MTMS 11.25 g + DMDMS 3.75 g + 水 $\sim$0.2 mL & 过夜预水解 + DMF 15 g = 30 g 基液 \\
+外层液（1 mat = 2 层） & 基液 \textbf{20.00 g} + PVP \textbf{3.44 g} & 两外层各 10 mL + 每层试纺 1--3 mL；两 mat 共用罐 = 基液 40 g + PVP 6.88 g \\
+中层液（1 mat = 1 层） & 基液 \textbf{10.00 g} + PVP \textbf{1.72 g} + 正丙醇锆 \textbf{0.64 g} & C-Zr$\uparrow$ 用 2.56 g；锆用注射器滴加 \\
+糖水（2 g 档） & 葡萄糖 \textbf{2.00 g} + 去离子水 \textbf{3.0 mL} & 40--50\,°C 搅 5--10 min 溶清，冷至 $<$40\,°C 再加，现配现用 \\
+糖水（4 g 档） & 葡萄糖 \textbf{4.00 g} + 去离子水 \textbf{4.5 mL} & 同上 \\
+\bottomrule
+\end{tabular}
+
+\section*{2. 样品组（900 °C 主线 + 支线）}
+\begin{tabular}{l p{12.3cm}}
+\toprule
+样品 & 糖 / 预氧化 / Zr —— 目的 \\
+\midrule
+A & 中层糖 2 g；无预氧化；Zr 0.64 g（$\approx$5 mol\%）——现有工艺基线（0712 同款） \\
+A0 & 中层糖 0；无预氧化；Zr 0.64 g——PVP 碳背景（无糖对照） \\
+B & 糖 2 g；预氧化 220\,°C $\times$ 60 min；Zr 0.64 g——预氧化成壳（苦瓜主验证） \\
+B0 & 糖 0；预氧化 220\,°C $\times$ 60 min；Zr 0.64 g——预氧化 $\times$ 无糖对照 \\
+C & 糖 4 g；预氧化 220\,°C $\times$ 60 min；Zr 0.64 g——预氧化 + 高糖造孔 \\
+E & 糖 4 g；无预氧化；Zr 0.64 g——糖 $\times$ 预氧化交叉 \\
+C-Zr$\downarrow$ & 糖 4 g；预氧化 220\,°C $\times$ 60 min；Zr 0.64 g——标准 Zr 重复验证（与 C 同） \\
+C-Zr$\uparrow$ & 糖 4 g；预氧化 220\,°C $\times$ 60 min；Zr \textbf{2.56 g}（$\approx$20 mol\%）——Zr 保碳上限（抑碳最强） \\
+B-t0.5 / B-t2 & 糖 2 g；预氧化 220\,°C $\times$ 30 / 120 min；Zr 0.64 g——预氧化时间梯度（壳厚与突起） \\
+D3 & 糖 2 g；预氧化 220\,°C $\times$ 60 min；Zr 0.64 g——\textbf{硅烷比 3:1}，其余同 B（低比探路） \\
+C-1250 / E-1250 & （同 C/E）——C、E 出炉件各切一份改烧 1250\,°C（不新纺） \\
+P 系列 & 第二轮：外层 PVP$\rightarrow$PAN（先溶解性小试） \\
+\bottomrule
+\end{tabular}
+
+\section*{3. 加料顺序与搅拌时间轴（每罐通用）}
+\begin{enumerate}[itemsep=2pt]
+  \item 00:00 基液 + PVP 分次加入，室温磁搅（PVP 完全溶解无团，$\geq$6 h 为佳）；
+  \item PVP 溶后（约第 4--5 h）\textbf{注射器滴加正丙醇锆}（与预水解 Si--OH 结合成 Si--O--Zr），继续搅满 6 h；
+  \item 糖水\textbf{纺丝当天}现溶（40--50\,°C），冷至 $<$40\,°C 缓慢加入，再搅 15--30 min $\rightarrow$ \textbf{立即装针管纺丝}；
+  \item 纺前每罐取 $\sim$1 mL 测\textbf{电导率}存档；记录实际投入质量与湿度。
+\end{enumerate}
+
+\section*{4. 逐日执行表（已顺延一日，09-03 起）}
+\begin{tabular}{p{2.6cm} p{13.2cm}}
+\toprule
+日期 & 执行内容（用量见 §1/§2） \\
+\midrule
+09-03（四）晚 & 葡萄糖 \textbf{105\,°C 烘 3 h} 入干燥器；配硅烷罐 1：MTMS 62.50 g + DMDMS 12.50 g + 水 1.0--1.5 mL，密封磁搅\textbf{过夜} \\
+09-04（五） & 上午：硅烷罐 1 + DMF 75.0 g 搅 30 min $\rightarrow$ 基液 150 g 密封。09:30 起同时开 4 罐（搅 6 h）：\textbf{外层罐}（A/A0 共用）= 基液 40.00 g + PVP 6.88 g；\textbf{A 中层} = 基液 10.00 g + PVP 1.72 g；\textbf{A0 中层} = 同上（无糖无水）。\textbf{15:30}：A、A0 中层各滴加正丙醇锆 0.64 g。搅满 6 h 后全部密封过夜（A 糖水 09-05 现配） \\
+09-05（六） & 07:45 溶 A 糖水（2.00 g + 3.0 mL）；08:00 加入 A 中层再搅 15--30 min。\textbf{08:30 纺 A}：外(10 mL) $\rightarrow$ 中(10 mL) $\rightarrow$ 外(10 mL)，1.5 mL/h，全金属针头，每层先试纺 1--3 mL 弃，\textbf{连续不中断}，硅油纸 30 cm 条收集，记湿度。纺完称\textbf{初重}，平放晾 1--2 h。下午同法纺 \textbf{A0}（无糖中层直接可用）。傍晚配 B/B0 中层（各 10.00 g + 1.72 g PVP；B0 无糖）搅 6 h，21:00 加 Zr 0.64 g $\times$ 2 \\
+09-06（日） & 上午配外层罐（B/B0 共用 40 g + 6.88 g PVP）搅 6 h。\textbf{A/A0 装炉}（理学楼 227，Ar，两舟编号）：20\,°C $\rightarrow$ 200\,min 到 200\,°C 保温 1 h $\rightarrow$ 400\,min 到 900\,°C 保温 1 h $\rightarrow$ 自然炉冷（过夜） \\
+09-07（一） & 上午：出炉 A/A0，称终重/算失重，送 SEM（杜老师）。下午：B 糖水现配（2.00 g + 3.0 mL）加入 B 中层 $\rightarrow$ \textbf{纺 B、B0} $\rightarrow$ \textbf{空气预氧化}（见 §5）$\rightarrow$ 装袋。\textbf{晚}：配第 2 罐硅烷（62.50 + 12.50 + 水）预水解过夜 \\
+\bottomrule
+\end{tabular}
+
+{\small\itshape 第一周结束：A/A0/B/B0 闭环。}
+
+\begin{tabular}{p{2.6cm} p{13.2cm}}
+\toprule
+日期 & 执行内容（用量见 §1/§2） \\
+\midrule
+09-08（二） & 早：第 2 罐硅烷 + DMF 75.0 g 搅 30 min $\rightarrow$ 基液（供 C/E/Zr 系列）密封。\textbf{B/B0 装炉} Ar 900\,°C（同 09-06 程序）。配外层罐（C/E 共用，新基液 40 g + 6.88 g PVP）与 C、E 中层（各 10 g 基液 + 1.72 g PVP），搅 6 h，15:30 各加 Zr 0.64 g \\
+09-09（三） & 上午：出炉 B/B0，\textbf{节点 1}：SEM A vs B——预氧化成壳？否 $\rightarrow$ 调预氧化制度（先做 B-t2）再验。\textbf{通过才继续}：早 07:45 现配 C、E 糖水（各 4.00 g + 4.5 mL）加入中层 $\rightarrow$ 下午纺 C、E $\rightarrow$ C 预氧化后与 E（不预氧）分别装袋 \\
+09-10（四） & \textbf{C/E 装炉} Ar 900\,°C（一炉两舟，舟位编号）。配外层罐（Zr 系列共用 40 + 6.88）与 C-Zr$\downarrow$（10 + 1.72 + Zr 0.64）、C-Zr$\uparrow$（10 + 1.72 + \textbf{Zr 2.56 g}）中层，搅 6 h。\textbf{晚}：配 D3 硅烷小批（11.25 + 3.75 g + 水 $\sim$0.2 mL）预水解过夜 \\
+09-11（五） & 上午：出炉 C/E，SEM+BET，\textbf{节点 2}：糖与孔隙（C vs A；BET 孔容）。D3：加 DMF 15 g 成基液。下午：Zr 系列糖水现配（各 4.00 g + 4.5 mL）加入 $\rightarrow$ 纺 C-Zr$\downarrow$、C-Zr$\uparrow$ $\rightarrow$ 预氧化 $\rightarrow$ 装炉 \\
+09-12（六） & Zr 系列 Ar 900\,°C 炉冷。配 D3 工作液（外层 20 + 3.44；中层 10 + 1.72 + Zr 0.64 + 糖水 2.00 g + 3.0 mL）搅 6 h。缓冲：可补 B-t2（预氧化 120 min） \\
+09-13（日） & 上午：出炉 Zr 系列；Raman（A0/B0 无糖对照），\textbf{节点 3}：Zr 掺量对碳保留/形貌影响。下午：纺 D3 $\rightarrow$ 预氧化 60 min $\rightarrow$ 装炉 Ar 900\,°C（趁空炉位） \\
+09-14（一） & 休息 / 机动；D3 出炉 \\
+09-15（二） & 协调 1250\,°C 炉：C/E 各切一份改烧 \textbf{C-1250 / E-1250}（见 §5）；集中表征准备 \\
+09-16（三） & VNA 介电：算 $|Z_{\mathrm{in}}/Z_0|$ 与 $\alpha$（\textbf{匹配判定先行}）；热导率（标注口径） \\
+09-17（四） & 1250 支线出炉；补测复核；数据整理 \\
+09-18（五） & \textbf{汇总}：形貌--阻抗--隔热/吸波联表，写小结 \\
+\bottomrule
+\end{tabular}
+
+\section*{5. 炉子程序}
+\begin{itemize}
+  \item \textbf{空气预氧化}（马弗炉，仅 B/B0/C/C-Zr$\downarrow$/C-Zr$\uparrow$/B-t0.5/B-t2/D3）：室温 $\rightarrow$ 100\,°C 保温 30 min（赶溶剂）$\rightarrow$ 2--3\,°C/min $\rightarrow$ \textbf{220\,°C} 保温 \textbf{60 min}（B-t0.5 组 30 min；B-t2 组 120 min；\textbf{全程 $\le$ 250\,°C}）$\rightarrow$ 炉内自然降温至 $<$60\,°C 取出；A/A0/E 跳过。
+  \item \textbf{Ar 900\,°C 热解}（理学楼 227）：20 $\rightarrow$ 200\,°C 用时 200 min $\rightarrow$ 200\,°C 保温 60 min（除残余溶剂）$\rightarrow$ 200 $\rightarrow$ 900\,°C 用时 400 min（对应 200--600\,°C 段 $\approx$1.75\,°C/min，在 1--2\,°C/min 要求内）$\rightarrow$ 900\,°C 保温 60 min $\rightarrow$ 自然炉冷。
+  \item \textbf{1250\,°C 支线}：C/E 出炉件各切一份，在原 1250\,°C 炉按既有程序（参考 6.11 烧结 200/400/420/1250/60/$-$121 档位，需管炉老师确认）改烧。
+  \item \textbf{气氛纪律}：空气预氧化与 Ar 热解两段\textbf{必须分开}，先降温至 $<$60\,°C 再转移；Ar 吹扫 30 min 后再升温。
+\end{itemize}
+
+\section*{6. 记录与红线}
+\begin{itemize}
+  \item 实验本写死口径：硅烷比 5:1（D3 3:1 例外）、基液（硅烷:DMF）1:1、Zr 0.64 g/10 g 基液 $\approx$ 5 mol\%。
+  \item 每组记：\textbf{实际投入的葡萄糖/去离子水/正丙醇锆质量}、初重、终重与失重率、湿度、纺前电导率、舟位编号、实际烧结程序。
+  \item \textbf{控水}：基液密封防潮（DMF 吸湿）；葡萄糖烘干现用、糖水现配；正丙醇锆在糖水前加入并防潮；加完糖水 15--30 min 内纺完。
+  \item 无糖对照（A0/B0）必须做；Raman 必须配同温度无糖对照。
+  \item 阻抗匹配判定先行（$|Z_{\mathrm{in}}/Z_0|$ 远离 1 先调碳/糖/Zr，再谈 RL 谷值）；碳/导电相适量最优，不过量。
+  \item 主线不混硅烷比（一律 5:1，D3 单独 3:1）；预氧化别把中间层糖烧掉（先 B-t0.5 验证）。
+  \item XRD \textbf{少研磨/整束测}（研磨诱发 t$\rightarrow$m \ce{ZrO2} 相变）；热导率标注口径，勿与常温毡值混比。
+  \item 配液在通风橱：MTMS/DMDMS/DMF 挥发；废液与针头按实验室规范处理。
+\end{itemize}
+
+\end{document}

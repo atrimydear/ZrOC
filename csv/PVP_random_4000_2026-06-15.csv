@@ -1,0 +1,21 @@
+f_doi,polymer,collector_type,solvent_1,solvent1_ratio,solvent_2,solvent2_ratio,solvent_3,solvent3_ratio,solution_concentration,needle_diameter_g,rotation_speed_rpm,voltage_kv,flow_rate_ml_h,tip_collector_distance_cm,temperature_c,humidity_percent,solubility_flag,pred,error,error_abs
+https://doi.org/10.3390/polym15030731,PVP,Flat,DMF,100,,0,,0,10,26,0,23,0.3,15,27,21,OK,289.645,-10.355,10.355
+https://doi.org/10.3390/polym15030731,PVP,Flat,DMF,100,,0,,0,10,21,0,23,0.1,15,27,21,OK,288.811,-11.189,11.189
+https://doi.org/10.3390/polym15030731,PVP,Flat,DMF,100,,0,,0,10,26,0,20,0.1,15,27,21,OK,311.795,11.795,11.795
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,14,22,100,17,0.25,10,22,33,OK,285.795,-14.205,14.205
+https://doi.org/10.3390/polym15030731,PVP,Flat,DMF,100,,0,,0,10,26,0,23,0.1,15,27,21,OK,278.179,-21.821,21.821
+https://doi.org/10.3390/polym15030731,PVP,Flat,DMF,100,,0,,0,10,26,0,23,0.1,12,27,21,OK,269.438,-30.562,30.562
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,18,22,100,13,0.25,20,22,33,OK,337.348,37.348,37.348
+https://doi.org/10.3390/polym15030731,PVP,Rolling Drum,DMF,100,,0,,0,10,21,0,20,0.3,15,27,21,OK,345.293,45.293,45.293
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,ETHANOL,100,,0,,0,10,22,100,21,0.25,10,22,33,OK,246.881,-53.119,53.119
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,18,22,100,21,0.25,20,22,33,OK,355.884,55.884,55.884
+https://doi.org/10.3390/polym15030731,PVP,Flat,DMF,100,,0,,0,10,21,0,20,0.3,15,27,21,OK,364.366,64.366,64.366
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,14,22,100,21,0.25,15,22,33,OK,231.712,-68.288,68.288
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,14,22,100,17,0.25,20,22,33,OK,227.468,-72.532,72.532
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,14,22,100,17,0.25,15,22,33,OK,222.186,-77.814,77.814
+doi:10.1016/j.compositesb.2019.01.094,PVP,Flat,ETHANOL,100,,0,,0,10,22,0,28,10,14,22,45,OK,386.394,86.394,86.394
+doi:10.1016/j.compositesb.2019.01.094,PVP,Flat,ETHANOL,100,,0,,0,6,22,0,22,16,18,22,45,OK,195.043,-104.957,104.957
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,14,22,100,13,0.25,15,22,33,OK,180.183,-119.817,119.817
+https://doi.org/10.1007/s12221-015-5263-4,PVP,Rolling Drum,DMF,100,,0,,0,18,22,100,17,0.25,15,22,33,OK,421.492,121.492,121.492
+doi:10.1016/j.compositesb.2019.01.094,PVP,Flat,ETHANOL,100,,0,,0,6,22,0,10,4,10,22,45,OK,173.404,-126.596,126.596
+https://doi.org/10.1016/j.molliq.2023.122819,PVP,Flat,WATER,100,,0,,0,20,18,0,17.75,1.2,15,23,26,OK,428.153,128.153,128.153

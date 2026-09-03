@@ -1,0 +1,78 @@
+% ============================================================
+%  三阶段实验时间表 — "夹心饼干→苦瓜"（2026-09-03 起，顺延一日）
+%  编译: xelatex 20260902实验时间表.tex
+% ============================================================
+\documentclass[a4paper, 11pt]{ctexart}
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=2.5cm, bottom=2.5cm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries 三阶段实验时间表}\\[4pt]
+{\normalsize ``夹心饼干 $\rightarrow$ 苦瓜''结构改造 ｜ 2026-09-03（周四）起（顺延一日）}
+\end{center}
+
+\section*{配方速览（外层不动，只动中层）}
+\begin{itemize}[itemsep=1pt, parsep=0pt]
+  \item \textbf{基液（先预水解）}：三甲氧基硅烷:二甲氧基硅烷 = \textbf{5:1}（75\,g 罐 = 62.5\,g + 12.5\,g；D3 支线 3:1 = 11.25+3.75）取 10\,g，\textbf{加去离子水几滴（约 0.1--0.2\,mL，不加酸）}搅拌\textbf{数小时至过夜}（水被硅烷吸收成 Si--OH）$\rightarrow$ 再与 DMF 10\,g 混匀（1:1）共 20\,g，密封防潮存放；
+  \item \textbf{外层液}：基液 10\,g + \textbf{PVP 1.72\,g}（=现有外层配方；一层 mat 两外层按 20\,g + 3.44\,g），搅拌 6\,h；
+  \item \textbf{中层液}：基液 10\,g + PVP 1.72\,g + 正丙醇锆 0.64\,g（$\approx$Zr:Si 5 mol\%；C-Zr$\uparrow$ 用 2.56\,g）+ 葡萄糖 0/2/4\,g，总搅拌 6\,h；
+  \item \textbf{糖水}：2\,g+3\,mL、4\,g+4--5\,mL 去离子水，40--50\,°C 搅 5--10\,min 溶清，现配现用；
+  \item \textbf{搅拌节奏}：硅烷+水预水解数小时$\sim$过夜；加 DMF 成基液搅 30\,min；工作液加 PVP 后共搅 6\,h；
+  \item \textbf{加料顺序}：基液+PVP 搅匀 $\rightarrow$ \textbf{先加正丙醇锆}（与预水解 Si--OH 成 Si--O--Zr）$\rightarrow$ 最后加糖水，\textbf{加完尽快纺}（预水解用纯水不加酸，避免残留酸日后催化锆/糖水解）。
+\end{itemize}
+
+\section*{时间表}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{p{2.1cm}p{6.4cm}p{6.4cm}}
+\toprule
+日期 & 上午 & 下午/晚上 \\
+\midrule
+09-03（四）& 备料：硅烷混合液 \textbf{5:1}（62.5+12.5\,g）+ \textbf{几滴水（不加酸）}，\textbf{预水解搅拌过夜}；葡萄糖 105\,°C 烘干 & \\
+09-04（五）& 加 DMF 成基液（1:1，密封存放）；取基液配 A(糖2g)、A0(糖0g) 中层液 & 下午起搅拌 6\,h（至晚间完成）\\
+09-05（六）& 纺 \textbf{A}（外--中--外，每层先试纺 3--5\,mL）$\rightarrow$ 干燥 & 配 B、B0 中层液（2g/0g），搅拌 6\,h \\
+09-06（日）& A/A0 装炉 \textbf{Ar 900\,°C}（200\,°C 1\,h $\rightarrow$ 慢速过 200--600\,°C $\rightarrow$ 900\,°C 1\,h）炉冷过夜 & B/B0 液完成备用 \\
+09-07（一）& 出炉 A/A0，称失重；送 \textbf{SEM} & 纺 B、B0 $\rightarrow$ \textbf{空气预氧化 0.5--1\,h}；\textbf{晚配第 2 罐硅烷}（62.5+12.5\,g+水）预水解过夜 \\
+09-08（二）& 第 2 罐 +DMF 成基液（供 C/E/Zr）；\textbf{B/B0 装炉} Ar 900\,°C & 配 C(4g)、E(4g 无预氧) 中层液（新基液）\\
+09-09（三）& 出炉 B/B0；\textbf{节点 1}：SEM 对比 A vs B——预氧化成壳？ & 决策通过则纺 C、E；C 预氧化 1\,h 后装炉、E 直接装炉 \\
+09-10（四）& C/E 一炉两舟 Ar 900\,°C（\textbf{舟位编号}）& 配 Zr 系列液（C-Zr$\downarrow$/C-Zr$\uparrow$）\\
+09-11（五）& 出炉 C/E；SEM+BET（\textbf{节点 2}：糖与孔）& 纺 Zr 系列 $\rightarrow$ 预氧化 $\rightarrow$ 装炉 \\
+09-12（六）& Zr 系列 Ar 900\,°C 炉冷 & 缓冲；可补 B-t2（预氧化 2\,h）\\
+09-13（日）& 出炉 Zr 系列；Raman（A0/B0 无糖对照）& \textbf{节点 3}：Zr 掺量对碳保留/形貌影响 \\
+09-14（一）& 休息 / 机动 & \\
+09-15（二）& 协调 1250\,°C 炉：\textbf{C-1250 / E-1250} 支线 & 集中表征准备 \\
+09-16（三）& VNA 介电：算 $|Z_{in}/Z_0|$ 与 $\alpha$（匹配判定先行）& 热导率（标注口径）\\
+09-17（四）& 1250 支线出炉；补测复核 & 数据整理 \\
+09-18（五）& \textbf{汇总}：形貌--阻抗--隔热/吸波 联表，写小结 & \\
+\bottomrule
+\end{tabular}
+
+\section*{D3 支线（B 配方、硅烷 3:1）穿插执行}
+\begin{itemize}[itemsep=1pt, parsep=0pt]
+  \item 09-10（四）晚：配 3:1 硅烷小批 15\,g（MTMS 11.25\,g + DMDMS 3.75\,g）+ 几滴水预水解过夜；
+  \item 09-11：加 DMF 15\,g 成基液；09-12 上午配 B 配方工作液（外层：基液 20\,g + PVP 3.44\,g；中层：基液 10\,g + PVP 1.72\,g + Zr 0.64\,g + 糖 2\,g 糖水），搅拌 6\,h；
+  \item 09-13 下午趁 Zr 出炉后的空炉位：纺 D3（外--中--外）$\rightarrow$ 预氧化 220\,°C 1\,h $\rightarrow$ 装炉 Ar 900\,°C $\rightarrow$ 09-14/15 出炉；
+  \item 目的：与 B 组（5:1）同配方直接对比可纺性与 ID/IG，定下一轮是否整体切 3:1。
+\end{itemize}
+
+\section*{三个决策节点}
+\begin{enumerate}[itemsep=2pt]
+  \item \textbf{09-09}：预氧化是否成壳/表面出现差异？否 $\rightarrow$ 调预氧化温度或时间（B-t2）再验；
+  \item \textbf{09-11}：糖量×预氧化对孔隙（BET）与形貌影响？Raman 看自由碳是否被糖抬升；
+  \item \textbf{09-13}：Zr 掺量对碳保留（ID/IG）的影响，定保碳-耐温平衡点。
+\end{enumerate}
+
+\section*{贯穿红线}
+\begin{itemize}[itemsep=1pt, parsep=0pt]
+  \item \textbf{控水}：基液密封；葡萄糖烘干现用；正丙醇锆在糖水前加入（与 Si--OH 结合）、防潮；加完糖水尽快纺；记录湿度；
+  \item 纺丝液配好先测一次电导率存档（对照用水问题）；
+  \item 预氧化 $\le$ 250\,°C，别烧掉中层糖；空气与 Ar 两段气氛分开；
+  \item 每组记录实际葡萄糖/水/正丙醇锆质量、初重与失重；
+  \item 无糖对照（A0/B0）必须做；阻抗匹配判定先行，再谈 RL。
+\end{itemize}
+
+\end{document}
