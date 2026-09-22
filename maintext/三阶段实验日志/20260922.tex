@@ -1,0 +1,72 @@
+% ============================================================
+%  三阶段实验日志 — 2026年9月22日
+%  本文件为纯正文，被 \input 进 menu.tex（第 4 章 三阶段实验日志）
+%  内容：A 样 SEM 定量分析结论 + 样品组变更（A0 取消、改做 B 预氧化版）+ 工艺修订
+% ============================================================
+
+\section{2026 年 9 月 22 日：A 样 SEM 分析结论与样品组变更}
+
+\subsection{一、A 样（烧结后）SEM 定量分析已完成}
+
+9 月 20 日取得的 A 样（中层葡萄糖 2\,g、无空气预氧化、Zr 0.64\,g、\ce{Ar} 900\,°C 保温 1\,h）SEM 数据共 12 张，经样品台坐标确认实为\textbf{两个台位 $\times$ 六个倍率}。已完成定量分析（标尺校验：程序实测标尺条 199\,px 对 标称 200\,px，各倍率一致），主要结果：
+
+\begin{itemize}
+  \item 纤维直径：\textbf{中位数 $\approx$ 0.50\,\textmu m}（台位 1 为 0.50、台位 2 为 0.55；IQR 约 0.27--0.84\,\textmu m），两个台位一致 $\rightarrow$ 样品无宏观不均匀；
+  \item 表面形貌：\textbf{纵向沟槽/条纹，间距 50--100\,nm}（2D FFT 主峰与扫描线断宽法两条独立方法互证）；
+  \item 孔隙：分级结构——nm 级细缝 / 0.1--0.6\,\textmu m / 数 \textmu m 束间空隙；表面孔隙率随倍率由 0.40（20k）升至 0.66（1k），故\textbf{只能同倍率横向比较}；
+  \item 缺陷：未见明显珠粒、断裂端、大颗粒；细纤维与交叉处有少量漏分割。
+\end{itemize}
+
+\textbf{结论}：(1) 900\,°C 热解后纤维网络\textbf{完整存活}，无粘连塌陷 $\rightarrow$ 基线工艺成立；(2) \textbf{尚未形成"致密壳 + 表面突起"的苦瓜结构}（高倍下无致密膜、无颗粒突起）$\rightarrow$ 需与预氧化组（B）对照验证。详细数据、方法、局限与对比规则见 \ref{sec:Asem} 节（A 样 SEM 定量分析）。
+
+\subsection{二、样品组变更：A0 取消，改做 B（预氧化版）}
+
+\begin{itemize}
+  \item \textbf{变更内容}：原 \textbf{A0（无糖对照，0\,g 葡萄糖）取消}，不再单独制备；该位次改由\textbf{剩余料制备 B（预氧化版）}，用于与 A 直接对照，回答"预氧化能否成壳/造突起"。
+  \item \textbf{用料基础}：使用 2026-09-04 配制的\textbf{剩余基液与已溶 PVP 的外层液 / 中层液}（均未滴锆、未加糖水），取出时目视状态正常（透明、无絮状、无胶块）；该批料至此已放置约 18 天，故操作第一步为\textbf{检查与小样试纺}。
+  \item \textbf{科学代价（须知）}：取消无糖对照后，"葡萄糖造孔"与"PVP 自身碳背景"两个来源\textbf{无法解耦}；若后续需要归属孔径/孔隙率的来源，须另行补做无糖样品。
+\end{itemize}
+
+\subsection{三、工艺修订：空气预氧化程序升级}
+
+原程序（室温 $\rightarrow$ 100\,°C 保温 30\,min $\rightarrow$ 2--3\,°C/min $\rightarrow$ 220\,°C 保温 60\,min）修订为：
+
+\begin{table}[htbp]
+\centering
+\caption{空气预氧化程序（B 组，2026-09-22 修订版）}
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+段 & 参数 & 修订理由 \\
+\midrule
+升温 1 & 室温 $\rightarrow$ \textbf{1--2\,°C/min} $\rightarrow$ 100\,°C，保温 30\,min & 先驱除残余 DMF/水，避免升温冲击 \\
+升温 2 & 100 $\rightarrow$ 150\,°C，保温 \textbf{30\,min（新增）} & 葡萄糖熔点 146\,°C，先熔融/脱水，避免毛细流动导致纤维搭接处板结 \\
+升温 3 & 150 $\rightarrow$ 220\,°C，保温 60\,min & 上限 220\,°C（PVP 耐氧上限较低） \\
+降温 & 随炉降至 $<$60\,°C 取出 & 避免热冲击；再转移至管式炉（先降温后换气氛） \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\noindent 修订依据：葡萄糖熔融（$\sim$146\,°C）与 PVP 软化（160--180\,°C，且被残余 DMF/水塑化后更低）温度区间重叠，\textbf{慢升温 + 150\,°C 过渡保温}可降低纤维熔并风险。记录项新增\textbf{预氧化前后质量}（得预氧化失重率）与\textbf{颜色}（应均匀金黄/浅褐）。
+
+\subsection{四、本轮执行要点（交由操作者执行）}
+
+操作以《B 组样品制备 SOP（用剩余料，预氧化版）》为准，流程为：检查剩料与小样试纺 $\rightarrow$ 中层液缓慢滴加\textbf{正丙醇锆 0.64\,g}搅 30\,min $\rightarrow$ 现配\textbf{糖水（葡萄糖 2.00\,g + 去离子水 3.0\,mL）}加入搅 15--30\,min，\textbf{30\,min 内开纺} $\rightarrow$ 外--中--外各 10\,mL、1.5\,mL/h（约 20\,h 跨夜连续纺）$\rightarrow$ 揭膜称初重、晾置 $\rightarrow$ \textbf{空气预氧化}（见上表）$\rightarrow$ \textbf{\ce{Ar} 900\,°C}（200\,min 至 200\,°C 保温 1\,h、400\,min 至 900\,°C 保温 1\,h、自然炉冷）$\rightarrow$ 称终重、编号、送 SEM。
+
+\subsection{五、待办与后续对比要求}
+
+\begin{enumerate}
+  \item B 出炉后，用\textbf{同一套管线}做 \textbf{A vs B 对比}：重点看（i）表面是否出现致密感/突起（同倍率孔隙率是否下降、20k 图沟槽是否变浅）、（ii）直径分布是否改变（收缩是否被抑制）、（iii）截面是否出现壳-芯；
+  \item \textbf{补截面 SEM}（苦瓜结构的核心验收项，此前缺失）；
+  \item 条件允许加做 \textbf{EDS 线扫}，验证 Zr 是否向纤维表面富集；
+  \item 体相与相组成：\textbf{BET（体相孔隙/比表面）、XRD（相组成）、Raman（自由碳）}；
+  \item 固定对比规则：孔隙率/孔径\textbf{同倍率同方法}比较；直径用距离变换脊线\textbf{中位数 + IQR}；条纹间距取 20k/15k/10k 三档平均。
+\end{enumerate}
+
+\subsection{六、本日相关文件}
+
+\begin{itemize}
+  \item A 样分析报告：\texttt{maintext/三阶段实验日志/20260920A样SEM基线.tex}（含图，本节 \ref{sec:Asem} 引用的正文）；独立导出 \texttt{SEM报告\_20260920.pdf}；
+  \item B 组操作 SOP：\texttt{maintext/三阶段实验日志/B组制备SOP\_用剩料.tex}（导出 \texttt{B组制备SOP\_用剩料\_给操作者.pdf}）；
+  \item A 组操作 SOP：\texttt{maintext/三阶段实验日志/A组制备SOP.tex}；
+  \item 分析脚本与图件：\texttt{SEM\_20260920/}（含 \texttt{sem\_seg.py}、\texttt{sem\_pore\_fft.py}、\texttt{analysis2/}）；原始数据 \texttt{C:\textbackslash Users\textbackslash ATRI\textbackslash Desktop\textbackslash 20260920\textbackslash}。
+\end{itemize}
