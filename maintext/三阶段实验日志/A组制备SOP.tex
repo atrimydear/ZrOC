@@ -1,0 +1,174 @@
+% ============================================================
+%  A 组样品制备 SOP（可交付操作版）
+%  用途：交给他人按此独立完成 A 组样品（含糖 2 g、无空气预氧化、Ar 900 °C）
+%  编译：在本目录运行  xelatex "A组制备SOP.tex"
+%  说明：2026-09-20 版；原 A0（无糖对照）已取消，本轮改做 A 组
+% ============================================================
+\documentclass[a4paper, 11pt]{ctexart}
+\usepackage{geometry}
+\geometry{left=1.8cm, right=1.8cm, top=2.0cm, bottom=2.0cm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\setlist[itemize]{itemsep=2pt}
+\setlist[enumerate]{itemsep=2pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries A 组样品制备 SOP（可交付操作版）}\\[4pt]
+{\normalsize 静电纺丝 SiZrOC 纤维 ｜ 含糖 2\,g ｜ 无空气预氧化 ｜ \ce{Ar} 900\,°C ｜ 2026-09-20 版}
+\end{center}
+
+\section*{0. 样品定义与目标}
+\begin{itemize}
+  \item \textbf{样品编号}：A（基线样品，可与已完成的 A 样 SEM 数据直接对比）。
+  \item \textbf{结构定义}：硅烷（MTMS:DMDMS = 5:1）为陶瓷骨架前驱体；PVP 为纺丝助剂；中层加\textbf{葡萄糖 2.00\,g}作造孔/碳源；加\textbf{正丙醇锆 0.64\,g}（$\approx$ Zr:Si 5\,mol\%）。
+  \item \textbf{关键工艺特征}：三层静电纺丝（外--中--外）；\textbf{不做空气预氧化}；直接 \ce{Ar} 气氛 900\,°C 热解 1\,h。
+  \item \textbf{对比用途}：A 为"无预氧化"基线，用于与 B 组（空气预氧化成壳）对照。
+\end{itemize}
+\noindent\textbf{备注（须知情）}：原 A0（无糖对照）本轮取消，因此"\textbf{糖的造孔贡献}"无法与 PVP 自身碳背景解耦；后续若需要归属孔来源，需另补无糖对照。
+
+\section*{1. 试剂与器材}
+\subsection*{1.1 试剂（括号内为实际瓶签规格）}
+\begin{table}[htbp]
+\centering
+\caption{试剂清单与规格}
+\begin{tabularx}{\textwidth}{l X}
+\toprule
+试剂 & 说明 \\
+\midrule
+甲基三甲氧基硅烷 MTMS & 98\%，MW 136.22 \\
+二甲基二甲氧基硅烷 DMDMS & 97\% \\
+N,N-二甲基甲酰胺 DMF & MW 73.09，吸湿，用后立即密封 \\
+聚乙烯吡咯烷酮 PVP & K88--96，$M_{\mathrm{w}}\approx1.3\times10^{6}$ \\
+d-无水葡萄糖 & 99\%，MW 180.16（无水，可不烘；受潮则 105\,°C 烘 3\,h） \\
+正丙醇锆 & 纯品折算 MW 327.6；\textbf{忌游离水、忌长期敞口} \\
+去离子水 & 预水解与配糖水用，不加酸 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection*{1.2 器材}
+磁力搅拌器 + 磁子；烧杯若干（贴标签）；保鲜膜/封口膜；分析天平（0.01\,g）；注射器 10\,mL $\times$ 3；\textbf{全金属针头}（塑料件会被 DMF 溶胀）；硅油纸（约 30\,cm 条）；静电纺丝机；管式炉（\ce{Ar} 气氛，理学楼 227）；样品袋与标签。
+
+\section*{2. 用量表（精确到 0.01\,g，本次按 1 个样品备料）}
+\begin{table}[htbp]
+\centering
+\caption{一个样品的用量表}
+\begin{tabularx}{\textwidth}{l l X}
+\toprule
+液体 & 组分与用量 & 备注 \\
+\midrule
+硅烷原液 & MTMS \textbf{16.67\,g} + DMDMS \textbf{3.33\,g} & 共 20.00\,g（5:1）；加去离子水 \textbf{0.2--0.4\,mL}，密封磁搅\textbf{过夜} \\
+基液 & 硅烷原液 20.00\,g + DMF \textbf{20.00\,g} & 搅 30\,min 得 40.00\,g（1:1）；用后密封防潮 \\
+外层液 & 基液 \textbf{20.00\,g} + PVP \textbf{3.44\,g} & 供两个外层各 10\,mL；室温搅拌 6\,h \\
+中层液 & 基液 \textbf{10.00\,g} + PVP \textbf{1.72\,g} + 正丙醇锆 \textbf{0.64\,g} & 先 PVP 搅溶，再滴锆；室温搅拌 6\,h \\
+糖水 & d-无水葡萄糖 \textbf{2.00\,g} + 去离子水 \textbf{3.0\,mL} & 40--50\,°C 搅 5--10\,min 溶清；\textbf{现配现用} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\noindent 剩余基液约 10\,g 留作试纺/补料，密封保存。
+
+\section*{3. 操作流程}
+\subsection*{D0（前一天傍晚）}
+\begin{enumerate}
+  \item 通风橱内配\textbf{硅烷原液}：称 MTMS 16.67\,g + DMDMS 3.33\,g 于干净烧杯；
+  \item 用移液枪/滴管加\textbf{去离子水 0.2--0.4\,mL（不加酸）}，搅匀；
+  \item 保鲜膜封口，室温磁力搅拌\textbf{过夜}（$\geq$8\,h），使硅烷部分水解生成 Si--OH。
+\end{enumerate}
+
+\subsection*{D1（第一天）}
+\begin{enumerate}
+  \item \textbf{上午}：向硅烷原液中加入 \textbf{DMF 20.00\,g}，搅 30\,min $\rightarrow$ \textbf{基液 40\,g}，封口防潮；
+  \item 配\textbf{外层烧杯}：基液 20.00\,g + PVP 3.44\,g，室温磁搅 6\,h（PVP 需完全溶解、无颗粒）；
+  \item 配\textbf{中层烧杯}：基液 10.00\,g + PVP 1.72\,g，室温磁搅（与上一步同步开始计 6\,h）；
+  \item \textbf{约开始后第 4--5\,h}：用注射器向中层烧杯\textbf{缓慢滴加正丙醇锆 0.64\,g}，边加边搅，继续搅至满 6\,h；
+  \item 两杯封口过夜（\textbf{糖水留到第二天现配}）。
+\end{enumerate}
+
+\subsection*{D2（第二天，纺丝日）}
+\begin{enumerate}
+  \item 现配\textbf{糖水}：葡萄糖 2.00\,g + 去离子水 3.0\,mL，40--50\,°C 搅至澄清，冷却至 $<$40\,°C；
+  \item 加入中层烧杯，搅 \textbf{15--30\,min}（\textbf{加完 30\,min 内必须开纺}）；
+  \item 三个 10\,mL 注射器分别灌装：\textbf{外层液 $\times$ 2、中层液 $\times$ 1}，装\textbf{全金属针头}；
+  \item \textbf{纺丝顺序（外--中--外）}：先纺外层 10\,mL $\rightarrow$ 再纺中层 10\,mL $\rightarrow$ 最后纺外层 10\,mL；
+    \begin{itemize}
+      \item 挤出速率 \textbf{1.5\,mL/h}；\textbf{每层开始前先试纺}，以\textbf{射流稳定}为准（泰勒锥稳定、无堵针/滴液、射流连续，约 5--15\,min），稳定后移到硅油纸上收集；
+      \item \textbf{三层必须连续不中断}；每层约 6.7\,h，一个样品合计约 \textbf{20\,h}（\textbf{跨夜}）；
+      \item 记录纺丝室环境状况（有湿度计则记数值）。
+    \end{itemize}
+  \item 纺完后\textbf{连同硅油纸取下}，称\textbf{初重}，室温平放晾置（避免折叠、避免沾尘）。
+\end{enumerate}
+
+\subsection*{D3（第三天，热解）}
+\begin{enumerate}
+  \item \textbf{注意：A 组不做空气预氧化}，直接进管式炉；
+  \item 平铺放入石英舟（\textbf{舟位编号}），装入管式炉；
+  \item \ce{Ar} 吹扫 30\,min 后升温，程序：
+    \begin{itemize}
+      \item 室温 $\rightarrow$ \textbf{200\,min} 升至 200\,°C，保温 \textbf{60\,min}（除残余溶剂 DMF/水）；
+      \item 200\,°C $\rightarrow$ \textbf{400\,min} 升至 900\,°C（约 1.75\,°C/min，对应气化段 1--2\,°C/min 要求），保温 \textbf{60\,min}；
+      \item \textbf{自然炉冷}至室温（$<$100\,°C 再停气取出）。
+    \end{itemize}
+  \item 出炉后称\textbf{终重}，计算失重率，装袋贴标签（样品编号 A + 日期 + 操作者）。
+\end{enumerate}
+
+\subsection*{D4（第四天）}
+\begin{enumerate}
+  \item 拍照存档（整体外观 + 弯折状态）；
+  \item \textbf{留一小块前驱体或成品小样}备用（后续做收缩率对比）；
+  \item 联系送 \textbf{SEM}（表面形貌）；如条件允许，加做\textbf{截面}。
+\end{enumerate}
+
+\section*{4. 红线与常见问题}
+\begin{itemize}
+  \item \textbf{控水}：基液密封防潮（DMF 吸湿）；正丙醇锆在糖水\textbf{之前}加、加后尽快纺；\textbf{糖水加完 30\,min 内开纺}。
+  \item \textbf{针头}：必须全金属；塑料/橡胶件会被 DMF 溶胀，导致堵针或出液不稳。
+  \item \textbf{试纺}：以射流稳定判定，不按体积计；不稳就调电压/喷射距离/挤出速率。
+  \item \textbf{记录}：实际投入的葡萄糖、去离子水、正丙醇锆质量（不只记"几克"）；初重/终重；液体定性黏度（玻璃棒挑丝长度、挂壁、气泡悬浮）。
+  \item \textbf{安全}：配液在通风橱（MTMS/DMDMS/DMF 挥发）；\ce{Ar} 为惰性气体，注意通风与窒息风险；管式炉操作按实验室规程。
+  \item \textbf{常见异常处置}：
+    \begin{itemize}
+      \item 中层液加入锆后\textbf{出现浑浊/白色絮状} $\rightarrow$ 锆在析出，\textbf{停止纺丝}并记录（不要硬纺）；
+      \item 纺丝中\textbf{频繁断丝/滴液} $\rightarrow$ 检查针头堵塞与挤出速率，必要时重新灌装；
+      \item 纤维膜\textbf{过薄/不成膜} $\rightarrow$ 检查收集距离与电压，必要时延长收集时间；
+      \item 液体\textbf{明显增稠拉长丝} $\rightarrow$ 记录时间点（这是纺丝液可用寿命数据），若无法纺丝则重新配液。
+    \end{itemize}
+\end{itemize}
+
+\section*{5. 记录表（操作者填写）}
+\begin{table}[htbp]
+\centering
+\caption{操作记录表}
+\begin{tabularx}{\textwidth}{l l l X}
+\toprule
+项目 & 计划值 & 实际值 & 现象/备注 \\
+\midrule
+MTMS 质量 & 16.67\,g & & \\
+DMDMS 质量 & 3.33\,g & & \\
+预水解水量 & 0.2--0.4\,mL & & 是否澄清 \\
+DMF 质量 & 20.00\,g & & \\
+PVP（外层/中层） & 3.44 / 1.72\,g & & 溶解是否完全 \\
+正丙醇锆 & 0.64\,g & & 滴加后是否浑浊 \\
+葡萄糖 & 2.00\,g & & 糖水是否澄清 \\
+去离子水（糖水） & 3.0\,mL & & \\
+纺丝开始/结束时间 & & & 连续与否 \\
+初重 / 终重 & & & 失重率 \\
+热解程序实际曲线 & 200\,min→200\,°C/1\,h；400\,min→900\,°C/1\,h & & 舟位编号 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{6. 交付物}
+\begin{enumerate}
+  \item 烧结后样品（装袋、编号 A + 日期）；
+  \item 完整记录表（第 5 节，含实际称量与现象）；
+  \item 外观照片；
+  \item SEM 送样需求（表面；有条件加截面）。
+\end{enumerate}
+
+\end{document}
