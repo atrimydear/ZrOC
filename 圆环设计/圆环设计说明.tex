@@ -1,0 +1,100 @@
+% ============================================================
+%  圆环设计说明（ID160 / OD200 / 环宽20 / 厚2）
+%  编译：在本目录运行  xelatex 圆环设计说明.tex
+% ============================================================
+\documentclass[a4paper, 11pt]{ctexart}
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usetikzlibrary{arrows.meta}
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries 圆环零件设计说明}\\[4pt]
+{\normalsize 内径 160\,mm ｜ 环宽 20\,mm ｜ 外径 200\,mm ｜ 厚度 2\,mm}
+\end{center}
+
+\section*{一、尺寸定义}
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{lll}
+\toprule
+参数 & 数值 & 说明 \\
+\midrule
+内径 ID & 160\,mm & 给定 \\
+环宽（径向） & 20\,mm & 给定 \\
+\textbf{外径 OD} & \textbf{200\,mm} & 计算：160 + 2$\times$20 = 200 \\
+厚度（轴向） & 2\,mm & 给定 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent 说明：按"环宽为径向宽度"理解，外径 $=$ 内径 $+$ 2\,$\times$\,环宽 $=$ 160\,$+$40 $=$ 200\,mm。
+
+\section*{二、结构简图}
+
+\begin{center}
+\begin{tikzpicture}[x=0.5mm, y=0.5mm, >=Stealth]
+  % 俯视图
+  \begin{scope}[shift={(0,0)}]
+    \draw[thick] (0,0) circle (100);
+    \draw[thick] (0,0) circle (80);
+    \draw[dashed] (-110,0) -- (110,0);
+    \draw[dashed] (0,-110) -- (0,110);
+    \draw[<->] (-100,0) -- (100,0);
+    \draw[<->] (0,-80) -- (0,80);
+    \node[below] at (0,-70) {$\varnothing$160};
+    \node[above] at (0,20) {$\varnothing$200};
+    \node at (0,-125) {俯视图};
+  \end{scope}
+  % 剖视图
+  \begin{scope}[shift={(150,0)}, x=1.6mm, y=1.6mm]
+    \draw[thick] (0,0) rectangle (20,2);
+    \draw[<->] (0,2.8) -- (20,2.8);
+    \node at (10,2.8) [above] {20（环宽）};
+    \draw[<->] (22,0) -- (22,2);
+    \node[below] at (22,1) {2};
+    \node at (10,-1.5) {剖视图};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\section*{三、质量估算}
+体积 $V=\dfrac{\pi}{4}\left(200^{2}-160^{2}\right)\times 2 \approx 22\,619\ \mathrm{mm^{3}} \approx 22.6\ \mathrm{cm^{3}}$（SolidWorks 实测 22\,619.5\,mm³）。
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+材料 & 密度 (g/cm³) & 估算质量 (g) \\
+\midrule
+钢 & 7.85 & $\approx$178 \\
+铝 & 2.70 & $\approx$61 \\
+铜 & 8.96 & $\approx$203 \\
+钛合金 & 4.51 & $\approx$102 \\
+氧化铝陶瓷 & 3.90 & $\approx$88 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{四、交付文件}
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+文件 & 用途 \\
+\midrule
+\texttt{Ring\_ID160\_OD200\_T2.SLDPRT} & SolidWorks 源文件（可改尺寸） \\
+\texttt{Ring\_ID160\_OD200\_T2.step} & 通用三维格式（导入其他 CAD） \\
+\texttt{Ring\_ID160\_OD200\_T2.stl} & 3D 打印 \\
+\texttt{Ring\_iso.png / Ring\_top.png} & 预览图 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{备注}：本次未标注公差；若用于配合件（如轴孔配合），需要给出配合公差与形位公差（同轴度、平面度），或说明使用场景（垫圈/夹具/炉具垫环等），我再补标注。
+
+\section*{五、理解确认}
+若"宽 20\,mm"指的是\textbf{轴向高度}、"厚度 2\,mm"指\textbf{径向壁厚}，则外径应为 $160+2\times2=164$\,mm，结构变为高 20\,mm 的薄壁圆筒。本图按前者（环宽为径向）制作；如需按后者，可立即重做。
+
+\end{document}
